@@ -1,7 +1,50 @@
-<!DOCTYPE html>
+Write the code for a webapp that will be hosted using Github Pages that will work like this: The user will select from various options some genres, themes and settings to create a story. Once the user has selected them, he will press a button that will use Opean AI API to create a story using those options that the user selected.
+
 <html>
+
+<head>
+	<title>Story Generator</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+	<h1>Choose Your Options</h1>
+	<p>Select your options to create a story!</p>
+
+<form>
+
+	<select>
+		<option value="Fantasy">Fantasy</option>
+		<option value="Mystery">Mystery</option>
+		<option value="Romance">Romance</option>
+		<option value="Adventure">Adventure</option>
+	</select>
+
+	<select>
+		<option value="Love">Love</option>
+		<option value="Friendship">Friendship</option>
+		<option value="Betrayal">Betrayal</option>
+		<option value="Courage">Courage</option>
+	</select>
+
+	<select>
+		<option value="Medieval">Medieval</option>
+		<option value="Space">Space</option>
+		<option value="Modern">Modern</option>
+		<option value="Futuristic">Futuristic</option>
+	</select>
+
+	<input type="submit" value="Create Story">
+
+</form>
+
+<script>
+	// Write code to make a request to OpenAI API
+	// with the selected options
+	// and then render the response.
+	
+</script>
+
 </body>
+
 </html>
