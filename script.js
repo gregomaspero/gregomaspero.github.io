@@ -12,7 +12,7 @@ function generateStory() {
     fetch("https://api.openai.com/v1/engines/davinci/completions", {
       method: "POST",
       headers: {
-        Authorization: "Bearer <YOUR_API_KEY_HERE>",
+        Authorization: "Bearer <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>",
         "Content-Type": "application/json"
       },
       body: JSON.stringify(data)
