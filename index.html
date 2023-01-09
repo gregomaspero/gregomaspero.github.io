@@ -1,42 +1,54 @@
-<html>
-HTML  <head>
-    <title>Story Generator</title>
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <h1>Story Generator</h1>
-    <form name="storyForm">
-      Genres:
-      <select name="genre">
-        <option value="adventure">Adventure</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="sci-fi">Sci-Fi</option>
-        <option value="romance">Romance</option>
-        <option value="mystery">Mystery</option>
-      </select>
-      <br><br>
-      Themes:
-      <select name="theme">
-        <option value="love">Love</option>
-        <option value="friendship">Friendship</option>
-        <option value="redemption">Redemption</option>
-        <option value="progress">Progress</option>
-        <option value="time">Time</option>
-      </select>
-      <br><br>
-      Settings:
-      <select name="setting">
-        <option value="city">City</option>
-        <option value="countryside">Countryside</option>
-        <option value="space">Space</option>
-        <option value="underwater">Underwater</option>
-        <option value="jungle">Jungle</option>
-      </select>
-      <br><br>
-      <input type="submit" value="Generate Story" onclick="generateStory()">
-      <br><br>
-      <div id="story">
-      </div>
-    </form>
-  </body>
+<!DOCTYPE html>
+<HTML>
+<head>
+  <title>Story Generator</title> 
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    select {
+      width: 200px;
+      padding: 10px;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Story Generator</h1>
+  <h2>Select the genres, themes and settings for your story</h2>
+  <div>
+    <label for="genre">Genre:</label>
+    <select id="genre">
+      <option value="fantasy">Fantasy</option>
+      <option value="sci-fi">Sci-Fi</option>
+      <option value="romance">Romance</option>
+      <option value="mystery">Mystery</option>
+    </select>
+  </div>
+  <div>
+    <label for="theme">Theme:</label>
+    <select id="theme">
+      <option value="adventure">Adventure</option>
+      <option value="romance">Romance</option>
+      <option value="mystery">Mystery</option>
+      <option value="action">Action</option>
+    </select>
+  </div>
+  <div>
+    <label for="setting">Setting:</label>
+    <select id="setting">
+      <option value="medieval">Medieval</option>
+      <option value="futuristic">Futuristic</option>
+      <option value="modern">Modern</option>
+      <option value="historical">Historical</option>
+    </select>
+  </div>
+  <button id="generate">Generate</button>
+  <div id="story"></div>
+  <div id="options"></div>
+  <div id="script"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
